@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="bootstrap.bundle.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">HISMA TOURS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main>
+
+
+
+    <div class="modal fade" id="book-tour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Book a Tour</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form action="#">
+
+
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input id="email1" type="email" class="form-control" placeholder="your email">
+                    <label for="email1">Email adderss</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select id="select1" type="email" class="form-select">
+                      <option selected>Find Your Tour</option>
+                      <option value="1">Tabuk, Muntain and chalet - LKR 193,648</option>
+                      <option value="2">Tiran Island, dive sites - LKR 26,794</option>
+                      <option value="3">Umluj, chalet and nature - LKR 170,817</option>
+                    </select>
+                    <label for="select1">Pick a tour</label>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="caeousel-slider">
+      <div>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img
+                src="https://images.unsplash.com/photo-1682686580224-cd46ea1a6950?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100 c-img" alt="slide 1">
+
+              <div class="carousel-caption top-0 mt-4 ">
+                <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+                <h1 class="display-1 fw-bolder text-capitalize">The Hisma Tours</h1>
+                <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#book-tour">Book a tour</button>
+              </div>
+
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="https://images.unsplash.com/photo-1682685797769-481b48222adf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100 c-img" alt="slide 2">
+
+              <div class="carousel-caption top-0 mt-4 ">
+                <p class="mt-5 fs-3 text-uppercase">the season has arrived</p>
+                <h1 class="display-1 fw-bolder text-capitalize">3 Available Tours</h1>
+                <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#book-tour">Book a tour</button>
+              </div>
+
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100 c-img" alt="slide 3">
+
+              <div class="carousel-caption top-0 mt-4 ">
+                <p class="mt-5 fs-3 text-uppercase">sestination activities</p>
+                <h1 class="display-1 fw-bolder text-capitalize">Go Desert Hiking</h1>
+                <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#book-tour">Book a tour</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="packages" class="pt-5">
+
+      <h2 class="text-center my-5 fw-bold">Packages</h2>
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="
+                https://images.unsplash.com/photo-1601222813785-6cdeeb94241a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="tabuk">
+              <div class="card-body">
+                <h5 class="card-title">Tabuk - LKR 193,648</h5>
+                <p class="card-text">Tabuk is the capital city of the Tabuk Region in northwestern Saudi Arabia. It has
+                  a population of 667,000. It is close to the Jordan–Saudi Arabia border and houses the largest air
+                  force base in Saudi Arabia.</p>
+                <a data-bs-toggle="modal" data-bs-target="#book-tour" class="btn btn-primary">Book tour</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="
+              https://images.unsplash.com/photo-1575461439294-56d00e4529d4?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="tiran island">
+              <div class="card-body">
+                <h5 class="card-title">Tiran Island - LKR 26,794</h5>
+                <p class="card-text">Tiran, and Yotvat Island, is a Saudi Arabian island that was formerly administered
+                  by Egypt. Sovereignty of the two Red Sea islands, Tiran and Sanafir, was ceded officially to Saudi
+                  Arabia as part of a maritime borders agreement between Egypt and Saudi Arabia</p>
+                <a data-bs-toggle="modal" data-bs-target="#book-tour" class="btn btn-primary">Book tour</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="
+              https://images.unsplash.com/photo-1682685797365-41f45b562c0a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="umluj">
+              <div class="card-body">
+                <h5 class="card-title">Umluj - LKR 170,817</h5>
+                <p class="card-text">SUndoubtedly one of the biggest draws for tourists to Umluj is the beautiful Red
+                  Sea beach. Visitors love the mesmerizing turquoise-colored water that is perfectly clean and free of
+                  pollution. The Red Sea is almost totally free of river discharge from rainfall that usually brings
+                  dirt into the sea</p>
+                <a data-bs-toggle="modal" data-bs-target="#book-tour" class="btn btn-primary">Book tour</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="bg-dark py-5 mt-5">
+      <div class="container text-light text-center">
+        <p class="display-5 mb-3">HismaTours</p>
+        <small class="text-white-50">&copy; Copyright by SapumalCham. All rights reserved.</small>
+      </div>
+    </footer>
+
+  </main>
+
+
+
+</body>
+
+</html>
